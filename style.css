@@ -8,88 +8,13 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', sans-serif;
     min-height: 100vh;
     padding: 20px;
-    position: relative;
-    overflow-x: hidden;
-}
-
-/* Animated weather background */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -2;
     background: linear-gradient(135deg, #0c1a2a 0%, #1a3a4a 50%, #2d5a6e 100%);
-    animation: gradientShift 10s ease infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Floating clouds */
-.cloud {
-    position: fixed;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 1000px;
-    z-index: -1;
-    animation: floatCloud linear infinite;
-}
-
-@keyframes floatCloud {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100vw);
-    }
-}
-
-/* Rain drops */
-.rain {
-    position: fixed;
-    top: -10px;
-    background: rgba(255, 255, 255, 0.6);
-    width: 2px;
-    height: 20px;
-    border-radius: 2px;
-    animation: rainFall linear infinite;
-    z-index: -1;
-}
-
-@keyframes rainFall {
-    to {
-        transform: translateY(100vh);
-    }
-}
-
-/* Snow flakes */
-.snow {
-    position: fixed;
-    top: -10px;
-    background: white;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    animation: snowFall linear infinite;
-    z-index: -1;
-}
-
-@keyframes snowFall {
-    to {
-        transform: translateY(100vh) rotate(360deg);
-    }
+    background-attachment: fixed;
 }
 
 .app {
     max-width: 600px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
 }
 
 .weather-card {
@@ -200,6 +125,7 @@ h1 {
 .location p {
     color: #666;
     margin-top: 5px;
+    font-size: 14px;
 }
 
 .temp-section {
@@ -229,8 +155,9 @@ h1 {
 }
 
 .condition {
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
+    font-weight: 500;
 }
 
 .details {
@@ -349,5 +276,9 @@ h1 {
     .search-box button {
         padding: 15px 20px;
         font-size: 14px;
+    }
+    
+    .weather-icon {
+        font-size: 60px;
     }
 }
