@@ -3,27 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard | Weather-AI</title>
+    <title>WeatherAI - Your Personal Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🌤️ Weather Dashboard</h1>
-        
-        <div class="location-input">
-            <input type="text" id="cityInput" placeholder="Enter city name or coordinates (e.g., Nairobi or -1.2921,36.8219)">
-            <button onclick="getWeatherByLocation()">Search</button>
-            <button onclick="getMyLocationWeather()">📍 Use My Location</button>
-        </div>
+    <div class="app">
+        <div class="weather-card">
+            <h1>🌤️ WeatherAI</h1>
+            
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Search city... (e.g., Nairobi, London, Tokyo)"
+                    autocomplete="off"
+                >
+                <button id="searchBtn">🔍 Search</button>
+            </div>
 
-        <div class="unit-toggle">
-            <button id="celsiusBtn" class="active">°C</button>
-            <button id="fahrenheitBtn">°F</button>
-        </div>
+            <div id="loading" class="loading hidden">⏳ Loading weather data...</div>
+            <div id="error" class="error hidden"></div>
+            
+            <div id="weatherInfo" class="weather-info hidden">
+                <div class="location">
+                    <h2 id="cityName">Nairobi</h2>
+                    <p id="country">Kenya</p>
+                </div>
 
-        <div id="loading" class="loading hidden">Loading weather data...</div>
-        <div id="error" class="error hidden"></div>
-        <div id="weatherContent" class="weather-content hidden"></div>
+                <div class="temp-section">
+                    <div class="weather-icon" id="weatherIcon">☀️</div>
+                    <div class="temperature" id="temperature">24°C</div>
+                    <div class="condition" id="condition">Sunny</div>
+                </div>
+
+                <div class="details">
+                    <div class="detail">
+                        <span>💧 Humidity</span>
+                        <strong id="humidity">65%</strong>
+                    </div>
+                    <div class="detail">
+                        <span>🌬️ Wind</span>
+                        <strong id="wind">12 km/h</strong>
+                    </div>
+                    <div class="detail">
+                        <span>📊 Feels like</span>
+                        <strong id="feelsLike">24°C</strong>
+                    </div>
+                </div>
+
+                <div class="ai-summary" id="aiSummary">
+                    <div class="ai-header">🤖 AI Weather Insight</div>
+                    <p id="summaryText">Loading AI analysis...</p>
+                </div>
+
+                <div class="forecast-section">
+                    <h3>📅 5-Day Forecast</h3>
+                    <div class="forecast" id="forecast"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
