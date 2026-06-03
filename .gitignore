@@ -1,0 +1,31 @@
+# API Keys (CRITICAL - never commit these!)
+.env
+.env.local
+.env.production
+config.js
+secrets.js
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories (if using npm/vite)
+node_modules/
+
+# Build outputs (if using build tools)
+dist/
+build/
+.vite/
+
+# Local Netlify folder
+.netlify/
