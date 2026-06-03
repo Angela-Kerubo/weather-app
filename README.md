@@ -1,4 +1,4 @@
-# Kenyan Weather App
+# Weather App
 
 A weather application specifically designed for Kenya, featuring all 47 counties and Nairobi sub-counties with AI-powered weather insights.
 
