@@ -15,45 +15,50 @@
                 <input 
                     type="text" 
                     id="cityInput" 
-                    placeholder="Search city... (e.g., Nairobi, London, Tokyo)"
+                    placeholder="Enter city name..."
                     autocomplete="off"
                 >
                 <button id="searchBtn">🔍 Search</button>
+                <button id="locationBtn" class="location-btn">📍 My Location</button>
             </div>
 
-            <div id="loading" class="loading hidden">⏳ Loading weather data...</div>
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Fetching weather data...</p>
+            </div>
+            
             <div id="error" class="error hidden"></div>
             
             <div id="weatherInfo" class="weather-info hidden">
                 <div class="location">
-                    <h2 id="cityName">Nairobi</h2>
-                    <p id="country">Kenya</p>
+                    <h2 id="cityName">--</h2>
+                    <p id="country">--</p>
                 </div>
 
                 <div class="temp-section">
-                    <div class="weather-icon" id="weatherIcon">☀️</div>
-                    <div class="temperature" id="temperature">24°C</div>
-                    <div class="condition" id="condition">Sunny</div>
+                    <div class="weather-icon" id="weatherIcon">🌡️</div>
+                    <div class="temperature" id="temperature">--°C</div>
+                    <div class="condition" id="condition">Loading...</div>
                 </div>
 
                 <div class="details">
                     <div class="detail">
                         <span>💧 Humidity</span>
-                        <strong id="humidity">65%</strong>
+                        <strong id="humidity">--%</strong>
                     </div>
                     <div class="detail">
                         <span>🌬️ Wind</span>
-                        <strong id="wind">12 km/h</strong>
+                        <strong id="wind">-- km/h</strong>
                     </div>
                     <div class="detail">
-                        <span>📊 Feels like</span>
-                        <strong id="feelsLike">24°C</strong>
+                        <span>🎯 Feels like</span>
+                        <strong id="feelsLike">--°C</strong>
                     </div>
                 </div>
 
                 <div class="ai-summary" id="aiSummary">
                     <div class="ai-header">🤖 AI Weather Insight</div>
-                    <p id="summaryText">Loading AI analysis...</p>
+                    <p id="summaryText">Analyzing weather patterns...</p>
                 </div>
 
                 <div class="forecast-section">
