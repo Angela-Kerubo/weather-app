@@ -1,7 +1,7 @@
 # Weather Dashboard for Weather-AI
 
 ## Live Demo
-[Link to your deployed app]
+https://weatherai-app.netlify.app/
 
 ## Setup Instructions
 1. Get API key from https://weather-ai.co/dashboard
