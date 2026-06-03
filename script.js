@@ -49,6 +49,12 @@ const kenyanLocations = {
     'juja': { lat: -1.1000, lon: 37.0167, county: 'Kiambu', region: 'Central', subcounty: 'Juja' },
     'thika': { lat: -1.0388, lon: 37.0833, county: 'Kiambu', region: 'Central', subcounty: 'Thika' },
 
+    // Eastern Nairobi & Machakos Border Towns
+    'ruai': { lat: -1.2690, lon: 36.9916, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Ruai' },
+    'kamulu': { lat: -1.2827, lon: 37.0638, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Kamulu' },
+    'joska': { lat: -1.2841, lon: 37.0975, county: 'Machakos', region: 'Eastern', subcounty: 'Joska' },
+    'malaa': { lat: -1.2713, lon: 37.1374, county: 'Machakos', region: 'Eastern', subcounty: 'Malaa' },
+
 
     // Kiambu County
     'kiambu': { lat: -1.1667, lon: 36.8333, county: 'Kiambu', region: 'Central' },
