@@ -717,7 +717,10 @@ function displayForecast(data, region) {
         
         let forecastIcon = getWeatherIcon((maxTemp + minTemp) / 2, 60);
         if (rainProb > 60) forecastIcon = '🌧️';
-        else if (maxTemp > 30) forecastIcon = '☀️🔥';
+        else if (maxTemp > 30) forecastIcon = '☀️';
+        else if (maxTemp > 24) forecastIcon = '🌤️';
+        else if (maxTemp > 20) forecastIcon = '⛅';
+        else forecastIcon = '☁️';
         
         const forecastDay = document.createElement('div');
         forecastDay.className = 'forecast-day';
@@ -732,12 +735,12 @@ function displayForecast(data, region) {
 }
 
 function getWeatherIcon(temp, humidity) {
-    if (temp > 32) return '🥵☀️';
-    if (temp > 28) return '☀️🔥';
-    if (temp > 24) return '☀️';
+    if (temp > 32) return '☀️🔥';
+    if (temp > 28) return '☀️';
+    if (temp > 24) return '🌤️';
     if (temp > 20) return '⛅';
-    if (temp > 16) return '🌤️';
-    if (temp > 12) return '☁️';
+    if (temp > 16) return '☁️';
+    if (temp > 12) return '🌥️';
     return '❄️';
 }
 
