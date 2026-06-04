@@ -26,6 +26,7 @@ const kenyanLocations = {
     'makadara': { lat: -1.3000, lon: 36.8333, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Makadara' },
     'kamukunji': { lat: -1.2833, lon: 36.8333, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Kamukunji' },
     'mathare': { lat: -1.2667, lon: 36.8500, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Mathare' },
+    
     // Nairobi neighborhoods
     'kileleshwa': { lat: -1.2667, lon: 36.7833, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Westlands' },
     'kilimani': { lat: -1.2833, lon: 36.7833, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Dagoretti' },
@@ -45,15 +46,11 @@ const kenyanLocations = {
     'kibera': { lat: -1.3143, lon: 36.7758, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Kibra' },
     'githurai': { lat: -1.2167, lon: 36.8667, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Roysambu' },
     'kahawa': { lat: -1.2167, lon: 36.9167, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Roysambu' },
+        'ruai': { lat: -1.2690, lon: 36.9916, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Ruai' },
+    'kamulu': { lat: -1.2827, lon: 37.0638, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Kamulu' },
     'ruiru': { lat: -1.1500, lon: 36.9667, county: 'Kiambu', region: 'Central', subcounty: 'Ruiru' },
     'juja': { lat: -1.1000, lon: 37.0167, county: 'Kiambu', region: 'Central', subcounty: 'Juja' },
     'thika': { lat: -1.0388, lon: 37.0833, county: 'Kiambu', region: 'Central', subcounty: 'Thika' },
-
-    // Eastern Nairobi & Machakos Border Towns
-    'ruai': { lat: -1.2690, lon: 36.9916, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Ruai' },
-    'kamulu': { lat: -1.2827, lon: 37.0638, county: 'Nairobi City', region: 'Nairobi', subcounty: 'Kamulu' },
-    'joska': { lat: -1.2841, lon: 37.0975, county: 'Machakos', region: 'Eastern', subcounty: 'Joska' },
-    'malaa': { lat: -1.2713, lon: 37.1374, county: 'Machakos', region: 'Eastern', subcounty: 'Malaa' },
 
 
     // Kiambu County
@@ -366,6 +363,8 @@ const kenyanLocations = {
     'athi river': { lat: -1.4500, lon: 36.9833, county: 'Machakos', region: 'Eastern' },
     'kangundo': { lat: -1.3333, lon: 37.3500, county: 'Machakos', region: 'Eastern' },
     'matuu': { lat: -1.1500, lon: 37.4167, county: 'Machakos', region: 'Eastern' },
+    'joska': { lat: -1.2841, lon: 37.0975, county: 'Machakos', region: 'Eastern', subcounty: 'Joska' },
+    'malaa': { lat: -1.2713, lon: 37.1374, county: 'Machakos', region: 'Eastern', subcounty: 'Malaa' },
     
     // Makueni County
     'makueni': { lat: -1.8000, lon: 37.6167, county: 'Makueni', region: 'Eastern' },
