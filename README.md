@@ -8,14 +8,14 @@ https://weatherai-app.netlify.app/
 ## Features
 - Search any Kenyan town by name
 - Automatic location detection
-- Real-time weather with AI summaries
+- Real-time weather with summaries
 - 7-day forecast
 - Kenya-specific weather context (coastal, highlands, lake region, etc.)
 - Mobile responsive design
 
 ## Tech Stack
 - HTML5, CSS3, JavaScript
-- Weather-AI API
+- WeatherAI API
 - Netlify (deployment)
 
 ## Setup
